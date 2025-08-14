@@ -34,7 +34,7 @@ function App() {
           <p className="description">PEAK is a co-op climbing game where the slightest mistake can spell your doom. Either solo or as a group of lost nature scouts, your only hope of rescue from a mysterious island is to scale the mountain at its center. Do you have what it takes to reach the PEAK?</p>
         </div>
       </div>
-      <div className="hottestContainer">
+      <div className="hottestContainer" style={{marginTop:"15vh"}}>
         <p>CHECK OUT OUR BEST PICKS FOR 2025 ⭸ </p><br/>
         <div className="hottestGameSlide">
           <img src={GameImage} className="hottestGameThumbnails"/>
@@ -43,8 +43,10 @@ function App() {
           <img src={GameImage} className="hottestGameThumbnails"/>
           <img src={GameImage} className="hottestGameThumbnails"/>
         </div>
+      </div>
 
-        <p style={{marginTop:'50px'}}>NEW RELEASES ⭸ </p><br/>
+      <div className="hottestContainer" style={{ backgroundColor:"#03541aff"}}>
+        <p>NEW RELEASES ⭸ </p><br/>
         <div className="hottestGameSlide">
           <img src={GameImage} className="hottestGameThumbnails"/>
           <img src={GameImage} className="hottestGameThumbnails"/>
@@ -52,8 +54,10 @@ function App() {
           <img src={GameImage} className="hottestGameThumbnails"/>
           <img src={GameImage} className="hottestGameThumbnails"/>
         </div>
+      </div>
 
-        <p style={{marginTop:'50px'}}>MOST WISHLISTED ⭸ </p><br/>
+      <div className="hottestContainer" style={{ backgroundColor:"#720404ff"}}>
+        <p>MOST WISHLISTED ⭸ </p><br/>
         <div className="hottestGameSlide">
           <img src={GameImage} className="hottestGameThumbnails"/>
           <img src={GameImage} className="hottestGameThumbnails"/>
