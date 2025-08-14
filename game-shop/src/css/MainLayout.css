@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(36, 35, 35);
+    overflow: hidden;
+}
+
+.navBar{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 5px 15px 25px 2px rgb(10, 11, 13);
+    box-sizing: border-box;
+    min-width: 100vw;
+    min-height: 5vh;
+    padding:15px;
+    padding-top:105px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: rgb(17, 19, 23);
+}
+
+.navTitle{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:3rem;
+    margin:auto;
+}
+
+.navTitle .a1{
+    color:rgb(210, 9, 9);
+}
+
+.navMenu{
+    display:flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin:auto;
+    font-size: 1rem;
+    margin-top:15px;
+    gap:20px;
+    
+}
+
+.navMenu a{
+    color:rgb(178, 170, 170);
+}
+
+.bannerContainer{
+    max-width: 100%;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.banner{
+    max-width: 100vw;
+    box-shadow: 0 20px 25px 0 rgb(15, 4, 4);
+}
+
+.bannerText{
+    position:absolute;
+    top:90%;
+    right:10%;
+    font-size:3rem;
+    overflow: hidden;
+    opacity:0;
+}
+
+.bannerContainer h1{
+    color:rgb(176, 193, 193);
+    font-size:3rem;
+}
+
+.animate{
+    animation: slide 1s ease-in-out 0.2s forwards;
+}
+
+
+@keyframes slide{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        transform:translate(0,-50%);
+    }
+}
+
+.rowContainer{
+    display:flex;
+    flex-direction:row;
+    margin:auto;
+    gap:50px;
+    width:85vw;
+}
+
+.topGames{
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+    text-align: center;
+    width:28%;
+    margin: auto;
+    opacity:0;
+}
+
+.topGames img{
+    border-radius:15px;
+    width:90%;
+    margin:auto;
+}
+
+.topGames .title{
+    font-size:2.5rem;
+    font-weight: bold;
+    margin-top:15px;
+    
+}
+
+.topGames .description{
+    text-align:justify;
+}
+
+.animateImg{
+    animation: animateContainer 1s ease-in-out 0.5s forwards;
+}
+
+.hottestContainer{
+    width:85vw;
+    overflow: hidden;
+    margin:auto;
+    margin-top:10vh;
+    background-color: rgb(27, 22, 22);
+    padding:50px 0 50px 0px;
+}
+
+.hottestContainer p{
+    font-weight: bolder;
+    font-size:1.2rem;
+    margin-left:45px;
+}
+
+.hottestGameSlide{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    padding-left:35px;
+    padding-right:35px;
+    gap:15px;
+    overflow:hidden;
+}
+
+.hottestGameThumbnails{
+    width:20%;
+    border-radius:5px;
+    opacity:0;
+    overflow:hidden;
+}
+
+.animateThumbnailSlide{
+    animation: animateThumbnail 1s ease-in-out 0.5s forwards;
+}
+
+.catalogueContainer{
+    margin:80px 0 0 0;
+    min-width:100;
+    background-image: url('../assets/index-catalogue.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left:20vw;
+    padding-right:5vw;
+    padding-top:5vh;
+    height:30vh;
+}
+
+.catalogueContainer h5 {
+    color:rgb(154, 154, 154);
+}
+
+.footer{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    width:100vw;
+    height:20vh;
+    padding-top:70px;
+    text-align:center;
+    background-color: rgb(19, 19, 21);
+   
+}
+
+@keyframes animateContainer {
+    0%{
+        transform:translate(0,-500px)
+    }
+    100%{
+        opacity:1
+    }
+}
+
+@keyframes animateThumbnail{
+    0%{
+        transform:translate(150px,0)
+    }
+    100%{
+        opacity:1
+    }
+}
+
+@media (max-width:1280px){
+    .bannerContainer h1{
+        font-size:1rem;
+    }
+    .rowContainer{
+        flex-direction: column;
+    }
+    .topGames{
+        width:90%;
+    }
+}
