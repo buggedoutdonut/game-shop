@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import '../css/MainLayout.css';
 
-import { AnimationFunction } from "../js/observer-anim";
+
 
 export const MainLayout = ({children}) =>{
-    useEffect(()=>{
-        {AnimationFunction()}
-    },[])
-
+   
     return(
         <>
             <div className="navBar">

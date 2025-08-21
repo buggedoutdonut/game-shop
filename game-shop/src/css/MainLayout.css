@@ -114,6 +114,8 @@ body {
 .topGames img{
     border-radius:15px;
     width:90%;
+    max-height:750px;
+    align-self:center;
     margin:auto;
 }
 
@@ -166,12 +168,12 @@ body {
 }
 
 .hottestGameThumbnails:hover{
-    animation: animateOnHover 2s ease-in-out 0.5s infinite;
+    animation: animateOnHover 3s ease-in-out 0.5s infinite;
     opacity:1;
 }
 
 .animateThumbnailSlide{
-    animation: animateThumbnail 1s ease-in-out 0.5s forwards;
+    animation: animateThumbnail .6s ease-in-out 0.5s forwards;
 }
 
 .catalogueContainer{
